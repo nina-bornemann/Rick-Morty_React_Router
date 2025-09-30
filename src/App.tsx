@@ -4,7 +4,6 @@ import {useState} from "react";
 import {characters} from "./Characters.ts";
 import {Route, Routes} from "react-router-dom";
 import Header from "./Header.tsx";
-import CharacterCard from "./components/CharacterCard.tsx";
 import CharacterDetailCard from "./types/CharacterDetailCard.tsx";
 import Create from "./Create.tsx";
 
