@@ -1,6 +1,6 @@
 # Rick & Morty Gallery 👽🚀
 
-![img.png](img.png)
+![img_1.png](img_1.png)
 
 A small React + TypeScript project powered by React Router and 
 the Rick & Morty API.
@@ -12,7 +12,8 @@ your own characters.
 -  Character Gallery 🖼  Browse all characters in a responsive card layout
 -  Character Detail View 📄 Click on a character to see more information
 -  Create New Characters ➕ Add your own characters to the gallery
-- Navigation Bar 🧭  Jump between Home, Characters, and Create using links or buttons
+-  Comment 💬 Leave a comment on a character
+-  Navigation Bar 🧭  Jump between Home, Characters, and Create using links or buttons
 
 ## 🛠️ Tech Stack
 - ⚛️ React
@@ -55,6 +56,5 @@ your own characters.
 - 🌍 Fetch live data from the Rick & Morty API instead of local mock data
 - 🎨 Improve UI styling with a design system or CSS framework
 - 📝 Add error handling & loading states
-- 👩‍💻 Author
 
 Built with 💚 and ☕ by Nina
