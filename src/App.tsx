@@ -2,6 +2,7 @@ import './App.css'
 import CharacterGallery from "./components/CharacterGallery.tsx";
 import {useState} from "react";
 import {characters} from "./Characters.ts";
+import {Route, Routes} from "react-router-dom";
 
 export default function App() {
     const [searchText, setSearchText] = useState("");
@@ -11,12 +12,22 @@ export default function App() {
 
     return (
         <>
-            <input type="text" onChange={(e) => setSearchText(e.target.value)} placeholder="Search for a character"/>
-            {
-                filteredCharacters.length > 0
-                    ? <CharacterGallery characters={filteredCharacters}/>
-                    : <p>No characters found</p>
-            }
+            <Routes>
+                <Route path={"/"} element={<h1>Hello! Welcome to the Rick&Morty Gallery!</h1>}/>
+
+                <Route path={"/characters"} element={
+                    <div>
+                        <input type="text" onChange={(e) =>
+                            setSearchText(e.target.value)} placeholder={"Search for a character"}/>
+
+                        {
+                            filteredCharacters.length > 0
+                                ? <CharacterGallery characters={filteredCharacters}/>
+                                : <p>No characters found</p>
+                        }
+                    </div>
+                }/>
+            </Routes>
         </>
     );
 }
