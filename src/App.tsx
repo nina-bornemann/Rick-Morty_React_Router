@@ -3,6 +3,7 @@ import CharacterGallery from "./components/CharacterGallery.tsx";
 import {useState} from "react";
 import {characters} from "./Characters.ts";
 import {Route, Routes} from "react-router-dom";
+import Header from "./Header.tsx";
 
 export default function App() {
     const [searchText, setSearchText] = useState("");
@@ -12,6 +13,7 @@ export default function App() {
 
     return (
         <>
+            <Header/>
             <Routes>
                 <Route path={"/"} element={<h1>Hello! Welcome to the Rick&Morty Gallery!</h1>}/>
 
