@@ -6,6 +6,7 @@ import {Route, Routes} from "react-router-dom";
 import Header from "./Header.tsx";
 import CharacterCard from "./components/CharacterCard.tsx";
 import CharacterDetailCard from "./types/CharacterDetailCard.tsx";
+import Create from "./Create.tsx";
 
 export default function App() {
     const [searchText, setSearchText] = useState("");
@@ -33,6 +34,8 @@ export default function App() {
                 }/>
 
                 <Route path={"/characters/:id"} element={<CharacterDetailCard characters={characters}/>}/>
+
+                <Route path={"/create"} element={<Create/>}/>
 
             </Routes>
         </>
