@@ -18,6 +18,26 @@ your own characters.
 - 🛣 React Router
 - ⚡ Vite 
 
+## 🔗 Routes & Examples
+- ### 🏠 Home Page 
+→ Displays a welcome message
+> path = /
+
+- ### 👥 Characters Gallery 
+
+→ Shows all available characters with a search bar
+> path = /characters 
+
+- ### 👤 Character Detail Page 
+→ Example: Click the Info button to view details about Rick Sanchez
+> general path = /characters/:id  
+> path to Rick = /characters/1
+
+- ### ➕ Create Page 
+→ Add a brand new character to the gallery
+> path = /create
+
+
 ## 🚀 Getting Started
 1. Clone the repo
    >git clone https://github.com/your-username/rick-and-morty-gallery.git  
@@ -29,9 +49,10 @@ your own characters.
 
    The app will be available at 👉 http://localhost:5173
 
-### 🔮 Future Improvements
+## 🔮 Future Improvements
 - 🌍 Fetch live data from the Rick & Morty API instead of local mock data
--  🎨 Improve UI styling with a design system or CSS framework
+- 🎨 Improve UI styling with a design system or CSS framework
 - 📝 Add error handling & loading states
 - 👩‍💻 Author
--  Built with 💚 and ☕ by Nina
+
+Built with 💚 and ☕ by Nina
