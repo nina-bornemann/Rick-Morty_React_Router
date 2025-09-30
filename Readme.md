@@ -1,5 +1,7 @@
 # Rick & Morty Gallery 👽🚀
 
+![img.png](img.png)
+
 A small React + TypeScript project powered by React Router and 
 the Rick & Morty API.
 The app lets you browse characters, view details, and create 
