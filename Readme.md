@@ -9,8 +9,8 @@ your own characters.
 
 ## ✨ Features
 -  **Search Functionality** 🔎 Find your favorite characters by name
+-  **Load Characters** 📥 Fetch characters from the Rick & Morty API
 -  **Character Gallery** 🖼  Browse all characters in a responsive card layout
--  **Load Characters Button** 📥 Fetch characters from the Rick & Morty API at the click of a button
 -  **Character Detail View**📄 Click on a character to see more information
 -  **Create New Characters** ➕ Add your own characters to the gallery
 -  **Comment** 💬 Leave a comment on a character
@@ -28,8 +28,8 @@ your own characters.
 > path = /
 
 - ### 👥 Characters Gallery 
-→ Shows a **Load Characters** button to fetch characters from the Rick & Morty API.  
-→ Includes a **search bar** to filter results by name.
+→ Fetch characters from the Rick & Morty API using axios and useEffect Hook   
+→ Includes a **search bar** to filter results by name
 > path = /characters 
 
 - ### 👤 Character Detail Page 
@@ -38,7 +38,7 @@ your own characters.
 > path to Rick = /characters/1
 
 - ### ➕ Create Page 
-→ Add a brand new character to the gallery
+→ Add a new character to the gallery
 > path = /create
 
 
