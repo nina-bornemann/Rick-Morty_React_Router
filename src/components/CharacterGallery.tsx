@@ -2,7 +2,7 @@ import {Character} from "../types/RickAndMortyCharacter.ts";
 import CharacterCard from "./CharacterCard.tsx";
 import "./CharacterGallery.css";
 import axios from "axios";
-import {useState} from "react";
+import {useEffect, useState} from "react";
 
 type CharacterGalleryProps = {
     characters: Character[];
@@ -14,6 +14,10 @@ export default function CharacterGallery(props: Readonly<CharacterGalleryProps>)
 
     const cards = char?.map((character) => <CharacterCard key={character.name} character={character}/>);
 
+    useEffect(() => {
+        loadAllCharacters()
+    }, [])
+
     function loadAllCharacters() {
         axios.get("http://rickandmortyapi.com/api/character")
             .then((response) => setChar(response.data.results))
@@ -22,7 +26,6 @@ export default function CharacterGallery(props: Readonly<CharacterGalleryProps>)
 
     return (
         <div className="character-gallery">
-            <button onClick={loadAllCharacters}>Load Characters</button>
             {cards}
 
         </div>
